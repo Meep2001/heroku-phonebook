@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon index.js",
     "build:ui": "cd ..\\full-stack-helsiki\\part2\\part2-prac & rmdir build & npm run build & shx cp -r build ..\\..\\..\\heroku-notes\\",
-    "deploy":"npm push",
+    "deploy":"git push",
     "deploy:full":"npm run build:ui & git add -A & git commit -m buildui & npm run deploy"
   },
   "author": "",
