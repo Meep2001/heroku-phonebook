@@ -45,6 +45,7 @@ const gernerateId = () => {
 const morgan = require("morgan");
 const app = express();
 app.use(express.json());
+app.use(express.static('build'));
 morgan.token("log", function ss(req, res) {
   if (req.method === "POST" )
     return `{ name:${req.body.name},number:${req.body.number}}`;
